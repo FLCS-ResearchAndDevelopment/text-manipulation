@@ -1,13 +1,21 @@
 # text-manipulation
-This repository contains various code examples for  ASCII text manipulation
+This repository contains various code examples for ASCII text manipulation.
+This time we current suport:
+
+- ** The generation of a very large ASCII text file. **
+
+- ** The reversal of every line of the input file. ** 
+
 
 # Large ASCII Text File Generator
 
-This project contains a C++ program to generate a large text file of random ASCII lines. Each line has a random length between 10 and 100 characters, and only contains printable ASCII characters.
+This project contains a C++ program to generate a large text file of random ASCII lines. 
+Each line has a random length between 10 and 100 characters, and only contains printable ASCII characters.
 
 ## Overview
 
-The program is multi-threaded, leveraging modern C++ (C++17) random utilities to ensure unique, non-repetitive data on each run. With 15 million lines of text, this tool is ideal for creating sample datasets or testing file processing algorithms.
+The program is multi-threaded, leveraging modern C++ (C++17) random utilities to ensure unique, non-repetitive data on each run. 
+With 15 million lines of text, this tool is ideal for creating sample datasets or testing file processing algorithms.
 
 ## Prerequisites
 
@@ -18,8 +26,8 @@ The program is multi-threaded, leveraging modern C++ (C++17) random utilities to
 
 1. Clone the repository:
    	```bash
-        git clone git@github.com:FLCS-ResearchAndDevelopment/text-manipulation.git
-	cd text-manipulation.git
+        git clone git@github.com:FLCS-ResearchAndDevelopment/text-manipulation.git text-manipulation
+	cd text-manipulation
 
 2. Compile the code:
 	```bash
@@ -78,8 +86,8 @@ This application is suited for processing large files with tens of millions of l
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/text-manipulation.git
-   cd text-manipulation.git
+   git clone https://github.com/username/text-manipulation.git text-manipulation
+   cd text-manipulation
 
 
 2. Compile the code:
@@ -95,10 +103,10 @@ Run the program with an input file (e.g. ascii_text_file.txt ) and an output fil
 bash
 Copy code
 ./reverse-lines
-By default, the program reads from big_input.txt and writes to reversed_output.txt. Modify the file names in the code if you want to use different files.
+By default, the program reads from ascii.text-file.txt and writes to reversed_output.txt. Modify the file names in the code if you want to use different files.
        ```bash
         git clone git@github.com:FLCS-ResearchAndDevelopment/text-manipulation.git
-        cd text-manipulation.git
+        cd text-manipulation
 
 4. Example
 Given an input file (input.text) with these lines:
