@@ -41,7 +41,7 @@ void processLines(std::ifstream& infile, std::ofstream& outfile) {
 
 int main() {
     // Define the input and output file names
-    std::string input_filename = "big_input.txt";
+    std::string input_filename = "ascii_text_file.txt";
     std::string output_filename = "reversed_output.txt";
 
     // Open the input file for reading

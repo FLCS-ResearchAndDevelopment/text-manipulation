@@ -18,23 +18,25 @@ The program is multi-threaded, leveraging modern C++ (C++17) random utilities to
 
 1. Clone the repository:
    	```bash
-   	git clone https://github.com/username/large-ascii-text-generator.git
-   	cd large-ascii-text-generator
+        git clone git@github.com:FLCS-ResearchAndDevelopment/text-manipulation.git
+	cd text-manipulation.git
 
 2. Compile the code:
-	bash
+	```bash
 	Copy code
 	g++ -std=c++17 gen-large-txt.cpp -o gen-large-txt
 	
 3. Usage
 	Run the executable to generate a text file named ascii_text_file.txt:
-	bash
+	```bash
 	Copy code
 	./gen-large-txt
+
 	After running, check the same directory for the output file. 
 	The program will output progress updates every 1 million lines.
 
 4. Explanation of Output
+
 	The file ascii_text_file.txt will contain 15 million lines. 
 	Each line consists of randomly generated ASCII characters with a random length (10-100 characters).
 
@@ -50,6 +52,7 @@ The program is multi-threaded, leveraging modern C++ (C++17) random utilities to
 	...
 
 6. Code Structure
+
 	generateRandomString(size_t length): Generates a random ASCII string of specified length.
 	main(): Initializes file handling, random line lengths, and controls the generation loop.
 
@@ -80,18 +83,21 @@ This application is suited for processing large files with tens of millions of l
 
 
 2. Compile the code:
-bash
-Copy code
-g++ -std=c++17 reverse-lines.cpp -o reverse-lines -pthread
+```bash
+   Copy code
+   g++ -std=c++17 reverse-lines.cpp -o reverse-lines -pthread
 
 3. Usage
 Command
-Run the program with an input file (e.g., big_input.txt) and an output file (e.g., reversed_output.txt):
+Run the program with an input file (e.g. ascii_text_file.txt ) and an output file (e.g., reversed_output.txt):
 
 bash
 Copy code
 ./reverse-lines
 By default, the program reads from big_input.txt and writes to reversed_output.txt. Modify the file names in the code if you want to use different files.
+       ```bash
+        git clone git@github.com:FLCS-ResearchAndDevelopment/text-manipulation.git
+        cd text-manipulation.git
 
 4. Example
 Given an input file (big_input.txt) with these lines:
