@@ -78,8 +78,8 @@ This application is suited for processing large files with tens of millions of l
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/text-line-reversal.git
-   cd text-line-reversal
+   git clone https://github.com/username/text-manipulation.git
+   cd text-manipulation.git
 
 
 2. Compile the code:
