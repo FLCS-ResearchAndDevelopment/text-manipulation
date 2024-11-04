@@ -83,9 +83,10 @@ This application is suited for processing large files with tens of millions of l
 
 
 2. Compile the code:
-```bash
+   ```bash
    Copy code
    g++ -std=c++17 reverse-lines.cpp -o reverse-lines -pthread
+
 
 3. Usage
 Command
@@ -100,7 +101,7 @@ By default, the program reads from big_input.txt and writes to reversed_output.t
         cd text-manipulation.git
 
 4. Example
-Given an input file (big_input.txt) with these lines:
+Given an input file (input.text) with these lines:
 
 text
 Copy code
@@ -116,19 +117,17 @@ dlroW olleH
 FED CBA
 
 5. Code Structure
-reverseLine: Reverses the characters in a single line using C++ reverse iterators.
-processLines: Manages reading, reversing, and writing lines for each thread. Synchronizes access to shared resources (files) using mutexes.
-main: Initializes file streams, launches threads, and manages thread synchronization.
+- **reverseLine**: Reverses the characters in a single line using C++ reverse iterators.
+- **processLines**: Manages reading, reversing, and writing lines for each thread. Synchronizes access to shared resources (files) using mutexes.
+- **main**: Initializes file streams, launches threads, and manages thread synchronization.
 
 6. Design Notes
-Concurrency: The program automatically adapts to the system's available cores, using std::thread::hardware_concurrency() to determine the number of threads.
-Synchronization: Protects file access with mutexes to prevent race conditions.
-Scalability: Scales well for large files by processing lines concurrently, making it efficient for high volumes of text data.
+
+- **Concurrency**: The program automatically adapts to the system's available cores, using std::thread::hardware_concurrency() to determine the number of threads.
+- **Synchronization**: Protects file access with mutexes to prevent race conditions.
+- **Scalability**: Scales well for large files by processing lines concurrently, making it efficient for high volumes of text data.
 
 7. Contributing
-Feel free to open issues or submit pull requests for enhancements or bug fixes. Contributions are welcome to improve multi-threading, error handling, and performance.
-
-markdown
-Copy code
-
+Feel free to open issues or submit pull requests for enhancements or bug fixes. 
+Contributions are welcome to improve multi-threading, error handling, and performance.
 
