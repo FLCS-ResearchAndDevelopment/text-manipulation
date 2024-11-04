@@ -2,9 +2,9 @@
 This repository contains various code examples for ASCII text manipulation.
 This time we current suport:
 
-- ** The generation of a very large ASCII text file. **
+- **The generation of a very large ASCII text file.**
 
-- ** The reversal of every line of the input file. ** 
+- **The reversal of every line of the input file.** 
 
 
 # Large ASCII Text File Generator
